@@ -1,12 +1,12 @@
 package org.launchcode.spaday.models;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Client {
-
     private String skinType;
     private String nailService;
-    private ArrayList<String> appropriateFacials = new ArrayList<>();
+    private List<String> appropriateFacials = new ArrayList<>();
 
     public Client(String skinType, String nailService) {
         this.skinType = skinType;
@@ -34,7 +34,7 @@ public class Client {
         this.nailService = nailService;
     }
 
-    public ArrayList<String> getAppropriateFacials() {
+    public List<String> getAppropriateFacials() {
         return appropriateFacials;
     }
 
@@ -84,4 +84,5 @@ public class Client {
             }
         }
     }
+
 }
